@@ -2,7 +2,7 @@
 
 ## Introduction
 
-@billimek dotfiles implementation leveraging the following:
+@crstamps2 dotfiles implementation (forked from @billimek) leveraging the following:
 
 * [yadm](https://thelocehiliosan.github.io/yadm/) - wrapper around the got sparse repo concept instead of symlinks
 * [zgen](https://github.com/tarjoilija/zgen) - lightweight zsh plugin system
@@ -42,7 +42,7 @@ apt-get install -y yadm
 ### Install dotfiles via yadm
 
 ```shell
-yadm clone https://github.com/billimek/dotfiles.git
+yadm clone https://github.com/crstamps2/dotfiles.git
 ```
 
 ## Details
