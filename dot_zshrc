@@ -7,23 +7,22 @@
 export ZDOTDIR="$HOME/.zshrc.d"
 export ZSH_CUSTOM="$ZDOTDIR"
 
-# Antidote Setup
-source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
-
-antidote load
-
-# Spaceship Prompt Config
-export SPACESHIP_CONFIG="$ZDOTDIR/spaceship.zsh"
-
-# Path to your Oh My Zsh installation.
-# export ZSH="$HOME/.oh-my-zsh"
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
-ZSH_THEME="spaceship"
+# Spaceship Prompt Config
+# export SPACESHIP_CONFIG="$ZDOTDIR/spaceship.zsh"
+# ZSH_THEME="spaceship"
+
+# Antidote Setup
+source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
+
+antidote load
+
+# Path to your Oh My Zsh installation.
+# export ZSH="$HOME/.oh-my-zsh"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -122,4 +121,5 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
 
-
+# Starship Prompt
+eval "$(starship init zsh)"
