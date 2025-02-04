@@ -1,0 +1,4 @@
+font-family = FiraCode Nerd Font Mono
+theme = tokyonight
+keybind = global:ctrl+grave_accent=toggle_visibility
+quick-terminal-position = center
