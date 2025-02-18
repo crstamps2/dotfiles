@@ -37,4 +37,4 @@ ohmyzsh/ohmyzsh path:plugins/dotenv
 # Other Fish-like features
 # zdharma-continuum/fast-syntax-highlighting  # Syntax highlighting
 # zsh-users/zsh-autosuggestions               # Auto-suggestions
-# zsh-users/zsh-history-substring-search      # Up/Down to search history
+zsh-users/zsh-history-substring-search      # Up/Down to search history
