@@ -116,6 +116,18 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Load all configuration files
+if [ ! -d "$HOME/.zshrc.d" ]; then
+    mkdir -p "$HOME/.zshrc.d";
+fi
+
+for cfg in $HOME/.zshrc.d/*.zsh; do
+    . "$cfg"
+done
+unset -v cfg
+
+# Add other PATH modifications after asdf is loaded
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # Amazon Q post block. Keep at the bottom of this file.
