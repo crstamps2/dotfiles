@@ -38,3 +38,4 @@ ohmyzsh/ohmyzsh path:plugins/dotenv
 # zdharma-continuum/fast-syntax-highlighting  # Syntax highlighting
 # zsh-users/zsh-autosuggestions               # Auto-suggestions
 zsh-users/zsh-history-substring-search      # Up/Down to search history
+mattmc3/zshrc.d
